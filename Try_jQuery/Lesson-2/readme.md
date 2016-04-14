@@ -61,3 +61,12 @@ console:
 ```
 $("#vacations").find("li").first();
 ```
+
+##2.11 Using last()
+_250 PTS_
+As you are looking through your code, you notice that someone else is selecting the last vacation with $("#vacations li:last"). You can refactor this code to find the last li within #vacations using traversal instead.
+
+console:
+```
+$("#vacations").find(".vacation").last("li");
+```
