@@ -70,3 +70,12 @@ console:
 ```
 $("#vacations").find(".vacation").last("li");
 ```
+
+##2.12 Using prev() 
+_250 PTS_
+The vacation that is previous to the last one will always be on sale. Use traversal with the prev() method to select the vacation that is right before the last one.
+
+console:
+```
+$("#vacations li").last().prev();
+```
