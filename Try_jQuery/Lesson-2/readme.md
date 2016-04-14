@@ -52,3 +52,12 @@ console:
 ```
 $("#vacations").find(".america");
 ```
+
+##2.10 Using first()
+_250 PTS_
+We've decided to add a "feeling lucky" feature to our site where the first vacation is selected by default. Using traversal or filtering, select the first vacation li element from the list.
+
+console:
+```
+$("#vacations").find("li").first();
+```
