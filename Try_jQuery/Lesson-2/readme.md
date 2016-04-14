@@ -8,6 +8,7 @@ We're getting ready to change some content on the Guided Tours page below. First
 ###2.4 Selecting Direct Children
 _250 PTS_
 Uh oh, it looks like we selected more than we wanted. We've also selected all the voting nav list items. Let's use a direct child selector to only select the li items that are direct children of #tours.
+
 console:
 ```
 $("#tours > li")
@@ -16,7 +17,26 @@ $("#tours > li")
 ###2.5 Selecting Multiple Elements
 _250 PTS_
 To sort the tours on the page, let's select all tours that are from Asia and all tours that are On Sale. You'll need to use multiple selectors for this, with the classes for .asia and .sale.
+
 console:
 ```
 $(".asia, .sale")
+```
+
+###2.6 The :first Pseudo Selector
+_250 PTS_
+Let's try a selector for finding the first tour. Use the :first pseudo selector to select the first tour in the list.
+
+console:
+```
+$("#tours li:first")
+```
+
+###2.7 The :even Selector
+_250 PTS_
+Part of our design wishlist is to add row striping to our list. We could do this with CSS, but doing it with JavaScript also sounds fun. Within our #tours list, find the direct children li elements, and then use the :even pseudo selector to select every other li element.
+
+console:
+```
+$("#tours > li:even")
 ```
