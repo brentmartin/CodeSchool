@@ -84,6 +84,14 @@ $("#vacations li").last().prev();
 _250 PTS_
 You need to add some effects to all featured vacations, but there is a problem, only titles have the .featured class. You don't flinch, since you know how to traverse. Using traversal, select all tours that have a .featured class on their title by getting the parent() of featured titles.
 
+console:
+```
+$("#tours li").find(".featured").parent();
+```
+
+##2.14 Traversing Down
+_250 PTS_
+You're looking back through some of your old code (from the time before you knew how to traverse), and you come across the selector you used to select all the tours: $("#tours > li"). You immediately realize it can be done better, refactor this to use traversal with children().
 
 console:
 ```
