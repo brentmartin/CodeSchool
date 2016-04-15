@@ -31,3 +31,10 @@ Now that we have a working click handler for the "Book Now" buttons, let's try s
 ##3.10 On Page Load
 _250 PTS_
 Our code seems to have an issue - it doesn't always work when the page is loaded. Wrap all of this code in a $(document).ready() block so that it won't run until the DOM has loaded.
+
+##3.11 Refactor Using Traversing
+**Video**
+
+##3.12 Removing the Clicked Button
+_250 PTS_
+When we click on one of the buttons, it removes all buttons on the page. Instead, let's just remove the one button that was clicked by using this.
