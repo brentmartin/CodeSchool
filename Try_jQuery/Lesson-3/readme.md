@@ -27,3 +27,7 @@ We're making progress on our page, and it's close to being useful. The next step
 ##3.9 Acting on Click
 _250 PTS_
 Now that we have a working click handler for the "Book Now" buttons, let's try something different. Try changing the click handler to trigger when the .tour list item is clicked instead.
+
+##3.10 On Page Load
+_250 PTS_
+Our code seems to have an issue - it doesn't always work when the page is loaded. Wrap all of this code in a $(document).ready() block so that it won't run until the DOM has loaded.
