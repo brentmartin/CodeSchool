@@ -12,3 +12,7 @@ Let's add the phone number immediately before() the "Book Now" button. You can c
 ##3.5 Adding to the DOM II
 _250 PTS_
 On second thought, maybe we should append() our <span> to the bottom of the .usa element. Let's change the code to add it there instead.
+
+##3.6 Removing From the DOM
+_250 PTS_
+We should probably remove that "Book Now" button until we can implement it. Go ahead and remove() it from the page.
