@@ -16,3 +16,10 @@ On second thought, maybe we should append() our <span> to the bottom of the .usa
 ##3.6 Removing From the DOM
 _250 PTS_
 We should probably remove that "Book Now" button until we can implement it. Go ahead and remove() it from the page.
+
+##3.7 Acting on Interaction
+**Video**
+
+##3.8 Click Interaction
+_250 PTS_
+We're making progress on our page, and it's close to being useful. The next step will be moving the code we have been working on into a click handler. Let's start by wrapping all of our previous code in a click handler for any <button> elements using the on() method.
