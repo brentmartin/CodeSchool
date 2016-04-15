@@ -95,5 +95,5 @@ You're looking back through some of your old code (from the time before you knew
 
 console:
 ```
-$("#tours li").find(".featured").parent();
+$("#tours").children();
 ```
