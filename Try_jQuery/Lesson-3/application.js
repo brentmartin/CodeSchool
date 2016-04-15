@@ -8,6 +8,6 @@ $(document).ready(function() {
   });
 
   $('#filters').on('click', '.on-sale', function() {
+    $('.tour').filter('.on-sale').addClass('highlight');
   });
-
 });
