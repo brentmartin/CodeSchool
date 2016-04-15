@@ -50,3 +50,11 @@ It looks like someone changed our HTML. Now the <button> is inside a <div> tag. 
 ##3.15 Relative Traversing III
 _250 PTS_
 Rather than clicking on the button to show the message, we've decided to allow travelers to click on the entire <li> element. Change the call to on() to target .tour elements instead of button elements. After that change, $(this) will reference the clicked <li>. Let's remove the closest() method so that .append(message) still works. Then, use find to locate the button element and remove() it.
+
+##3.16 Traversing and Filtering
+_250 PTS_
+**Video**
+
+##3.17 Fetching Data From the DOM I
+_250 PTS_
+Let's add a bit more incentive to get people to book these tours by offering a discount if they book today. Create a discount variable, and then assign the discount that is stored in the data() attribute on the .tour element. To assign the correct data value, traverse from the clicked button, $(this), to the closest .tour element, and then use data() to find the discount. We don't need to do anything with the discount variable just yet.
