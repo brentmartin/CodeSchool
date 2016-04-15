@@ -38,3 +38,7 @@ Our code seems to have an issue - it doesn't always work when the page is loaded
 ##3.12 Removing the Clicked Button
 _250 PTS_
 When we click on one of the buttons, it removes all buttons on the page. Instead, let's just remove the one button that was clicked by using this.
+
+##3.13 Relative Traversing I
+_250 PTS_
+With multiple tours on the page, we're no longer appending the message in the right place. We really only want this message to be added after() the button we click on. Instead of appending the message to the .usa list, add it after() the button that was clicked.
