@@ -6,4 +6,8 @@ $(document).ready(function() {
     tour.append(message);
     $(this).remove();
   });
+
+  $('#filters').on('click', '.on-sale', function() {
+  });
+
 });
