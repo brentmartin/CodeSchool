@@ -46,3 +46,7 @@ With multiple tours on the page, we're no longer appending the message in the ri
 ##3.14 Relative Traversing II
 _250 PTS_
 It looks like someone changed our HTML. Now the <button> is inside a <div> tag. We don't want the message to go inside the <div> tag though, we want it to go at the bottom of the <li> element. Instead of using after(), let's change our code to find the closest() .tour element and append() the message to the bottom of it.
+
+##3.15 Relative Traversing III
+_250 PTS_
+Rather than clicking on the button to show the message, we've decided to allow travelers to click on the entire <li> element. Change the call to on() to target .tour elements instead of button elements. After that change, $(this) will reference the clicked <li>. Let's remove the closest() method so that .append(message) still works. Then, use find to locate the button element and remove() it.
