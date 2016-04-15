@@ -66,3 +66,7 @@ We want to show this discount to the user in the message we show after the "Book
 ##3.19 Refactoring
 _250 PTS_
 We're using this code twice: $(this).closest('.tour') to find the tour element. Refactor your code so that the element is set to a variable named tour, and then use that variable instead. This way, we only query the DOM once for the tours, instead of twice.
+
+##3.20 Better On Handlers
+_250 PTS_
+There is a small problem with the way our on() handler is being used. Currently, it is targeting all of the <button> elements on the screen. Refactor the on() handler to only target <button> elements within a .tour by using the selector argument of the on() method.
