@@ -58,3 +58,7 @@ _250 PTS_
 ##3.17 Fetching Data From the DOM I
 _250 PTS_
 Let's add a bit more incentive to get people to book these tours by offering a discount if they book today. Create a discount variable, and then assign the discount that is stored in the data() attribute on the .tour element. To assign the correct data value, traverse from the clicked button, $(this), to the closest .tour element, and then use data() to find the discount. We don't need to do anything with the discount variable just yet.
+
+##3.18 Fetching Data From the DOM II 
+_250 PTS_
+We want to show this discount to the user in the message we show after the "Book Now" button is clicked. Go ahead and change the content of message to Call 1-555-jquery-air for a $<discount> discount., and swap out <discount> for the discount price.
