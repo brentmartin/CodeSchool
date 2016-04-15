@@ -23,3 +23,7 @@ We should probably remove that "Book Now" button until we can implement it. Go a
 ##3.8 Click Interaction
 _250 PTS_
 We're making progress on our page, and it's close to being useful. The next step will be moving the code we have been working on into a click handler. Let's start by wrapping all of our previous code in a click handler for any <button> elements using the on() method.
+
+##3.9 Acting on Click
+_250 PTS_
+Now that we have a working click handler for the "Book Now" buttons, let's try something different. Try changing the click handler to trigger when the .tour list item is clicked instead.
