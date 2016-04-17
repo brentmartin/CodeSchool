@@ -13,3 +13,10 @@ Inside the click event handler, show the .photos element by querying the DOM for
 ##4.6 Slide Effect II
 _250 PTS_
 The photos will now be shown, but we have no way of hiding them. Let's change this to use slideToggle so that the photos will be hidden if they click again.
+
+##4.7 Expanding on on()
+**Video**
+
+##4.8 Mouseover I
+_250 PTS_
+Our tour page is going great! Let's add a bit more behavior to the page. Write an event handler that
