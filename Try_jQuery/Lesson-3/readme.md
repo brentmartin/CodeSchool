@@ -78,3 +78,7 @@ Let's add some result filtering options to our page. We want to be able to click
 ##3.22 New Filter II
 _250 PTS_
 Now let's make these filters work! Inside our event handler, find all .tour elements and filter() for only those that have a class of .on-sale. Add a class of highlight to only these filtered tours on click.
+
+##3.23 New Filter III
+_250 PTS_
+There is one thing left to do, we need to remove the highlight class immediately after clicking a filter so we are only highlighting the correct elements. Another filter has been added to make things interesting. In both of these filters, remove the highlight class from anything that has it.
