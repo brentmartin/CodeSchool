@@ -9,3 +9,7 @@ After the DOM has loaded, let's add an event handler to watch for a click on but
 ##4.5 Slide Effect I
 _250 PTS_
 Inside the click event handler, show the .photos element by querying the DOM for it and calling the slideDown() method.
+
+##4.6 Slide Effect II
+_250 PTS_
+The photos will now be shown, but we have no way of hiding them. Let's change this to use slideToggle so that the photos will be hidden if they click again.
