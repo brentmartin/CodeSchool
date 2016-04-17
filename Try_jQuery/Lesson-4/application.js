@@ -1,3 +1,5 @@
 $(document).ready(function() {
-	alert($('img').length);
+  $('#tour').on('click', 'button', function() {
+    $(this).closest('.tour').find('.photo').slideDown();
+  });
 });
