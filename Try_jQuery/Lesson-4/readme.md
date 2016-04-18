@@ -24,3 +24,7 @@ Our tour page is going great! Let's add a bit more behavior to the page. Write a
 ##4.9 Mouseover II
 _250 PTS_
 Inside our new mouseenter event handler, call the slideToggle() method on the span tag within the picture description. You'll need to traverse down from the current element, $(this), and then find() the span tag.
+
+##4.10 Mouseleave
+_250 PTS_
+When the mouse leaves the li element, we'll want to hide the description of the photo as well. Write another event handler that targets the same elements, but calls slideToggle() only on the mouseleave event.
