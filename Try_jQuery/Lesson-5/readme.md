@@ -29,3 +29,7 @@ Let's continue seeing what we can do to add more flavor to our tours page. When 
 ##5.9 Animate II
 _250 PTS_
 The price per night will now fade, but let's make it move a little as well. We can't use slideDown() for this with our animate() call, though. When the mouseenter event is triggered, animate() the top property to -14px in order to move it up a bit.
+
+##5.10 Animation Speed
+_250 PTS_
+This animation lacks the pop we're looking for. Let's speed it up to run in 200ms using the 'fast' shorthand.
