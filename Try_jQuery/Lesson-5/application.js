@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $('.tour').on('mouseenter', function() {
-    $(this).css('background-color', '#252b30');
+    $(this).css({'background-color': '#252b30',
+                 'font-weight': 'bold'});
   });
 });
