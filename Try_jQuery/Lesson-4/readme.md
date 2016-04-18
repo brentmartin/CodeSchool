@@ -66,3 +66,7 @@ When this link is clicked, show the photos for the clicked tour by traversing to
 ##4.20 Event Parameter I
 _250 PTS_
 Change the first event handler so that the function takes an event parameter. Then use that event to stop the second event handler from being called.
+
+##4.21 Event Parameter II
+_250 PTS_
+Let's add to this so that we prevent the browser from jumping to the top of the page when the link is clicked as well.
