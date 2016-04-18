@@ -33,3 +33,7 @@ The price per night will now fade, but let's make it move a little as well. We c
 ##5.10 Animation Speed
 _250 PTS_
 This animation lacks the pop we're looking for. Let's speed it up to run in 200ms using the 'fast' shorthand.
+
+##5.11 Animate III
+_250 PTS_
+Let's update our mouseleave handler to remove the .per-night price with a little style. Animate the price to a top of 0px and an opacity of 0 when the mouse leaves the .tour element, and make it happen with a 'fast' duration.

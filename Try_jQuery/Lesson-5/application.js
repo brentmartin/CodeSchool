@@ -5,5 +5,6 @@ $(document).ready(function() {
   });
   $('.tour').on('mouseleave', function() {
     $(this).removeClass('highlight');
+    $(this).find('.per-night').animate({'top': '0px', 'opacity': '0'}, 'fast');
   });
 });
