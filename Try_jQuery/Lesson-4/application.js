@@ -5,4 +5,7 @@ $(document).ready(function() {
     $('#total').text(nights * dailyPrice);
     $('#nights-count').text($(this).val());
   });
+  $('#nights').on('focus', function() {
+    $('#nights').val(7);
+  });
 });

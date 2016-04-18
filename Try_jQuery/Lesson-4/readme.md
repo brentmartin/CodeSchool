@@ -47,3 +47,7 @@ Within our event handler, update the number of nights in the #nights-count eleme
 ##4.15 Keyup Event Handler II
 _250 PTS_
 Set the content of the #total element to the number the traveler has entered into the form field multiplied by the daily price.
+
+##4.16 Another Event Handler
+_250 PTS_
+Let's write a new event handler for the #nights form field we've been working with. When the focus event is triggered, set the number of #nights to a value of 7.
