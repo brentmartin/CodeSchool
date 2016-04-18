@@ -58,3 +58,7 @@ Let's write a new event handler for the #nights form field we've been working wi
 ##4.18 Link Events I
 _250 PTS_
 Write an event handler that will target all links with a class of .see-photos on click.
+
+##4.19 Link Events II
+_250 PTS_
+When this link is clicked, show the photos for the clicked tour by traversing to it using closest() and find() then sliding it down by using slideToggle().
