@@ -25,3 +25,7 @@ We've extracted out our styles into a new CSS class called highlight. Go ahead a
 ##5.8 Animate I
 _250 PTS_
 Let's continue seeing what we can do to add more flavor to our tours page. When the mouse first goes over the .tour element, we need to show the price per night, .per-night, and to make it stand out. Let's animate() the opacity to be 1 in our same event handler. This allows us to fade the element in.
+
+##5.9 Animate II
+_250 PTS_
+The price per night will now fade, but let's make it move a little as well. We can't use slideDown() for this with our animate() call, though. When the mouseenter event is triggered, animate() the top property to -14px in order to move it up a bit.
