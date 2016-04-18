@@ -10,3 +10,7 @@ Let's try to make the .tour elements on this page stand out a bit more. Inside o
 ##5.4 CSS II
 _250 PTS_
 Let's set the font-weight to bold as well by passing in a JavaScript object to the css() method.
+
+##5.5 Show Photo
+_250 PTS_
+Let's see what the tour page would look like if we showed the .photos on mouseenter as well. Try using the show() method here to make it visible.
