@@ -51,3 +51,10 @@ Set the content of the #total element to the number the traveler has entered int
 ##4.16 Another Event Handler
 _250 PTS_
 Let's write a new event handler for the #nights form field we've been working with. When the focus event is triggered, set the number of #nights to a value of 7.
+
+##4.17 Link Layover
+**Video**
+
+##4.18 Link Events I
+_250 PTS_
+Write an event handler that will target all links with a class of .see-photos on click.
