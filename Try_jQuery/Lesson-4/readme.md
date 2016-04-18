@@ -20,3 +20,7 @@ The photos will now be shown, but we have no way of hiding them. Let's change th
 ##4.8 Mouseover I
 _250 PTS_
 Our tour page is going great! Let's add a bit more behavior to the page. Write an event handler that
+
+##4.9 Mouseover II
+_250 PTS_
+Inside our new mouseenter event handler, call the slideToggle() method on the span tag within the picture description. You'll need to traverse down from the current element, $(this), and then find() the span tag.
