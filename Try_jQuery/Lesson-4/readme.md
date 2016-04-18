@@ -43,3 +43,7 @@ We've made a few changes to our tour page. Now we'll allow travelers to specify 
 ##4.14 Keyup Event Handler I
 _250 PTS_
 Within our event handler, update the number of nights in the #nights-count element to whatever the traveler entered in the #nights form field.
+
+##4.15 Keyup Event Handler II
+_250 PTS_
+Set the content of the #total element to the number the traveler has entered into the form field multiplied by the daily price.
