@@ -62,3 +62,7 @@ Write an event handler that will target all links with a class of .see-photos on
 ##4.19 Link Events II
 _250 PTS_
 When this link is clicked, show the photos for the clicked tour by traversing to it using closest() and find() then sliding it down by using slideToggle().
+
+##4.20 Event Parameter I
+_250 PTS_
+Change the first event handler so that the function takes an event parameter. Then use that event to stop the second event handler from being called.
