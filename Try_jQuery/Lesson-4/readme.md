@@ -39,3 +39,7 @@ It looks like both of our event handlers on the .photos li elements are exactly 
 ##4.13 Keyup Event
 _250 PTS_
 We've made a few changes to our tour page. Now we'll allow travelers to specify how many nights they want to book for their vacation. Write an event handler that will fire whenever the value within the keyup event is triggered on the #nights form field. The function can be empty now, then we'll implement it later.
+
+##4.14 Keyup Event Handler I
+_250 PTS_
+Within our event handler, update the number of nights in the #nights-count element to whatever the traveler entered in the #nights form field.

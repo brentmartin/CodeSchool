@@ -1,4 +1,5 @@
-$(document).ready(function(){
-  $(this).on('keyup', '#nights', function(){
+$(document).ready(function() {
+  $('#nights').on('keyup', function() {
+    $('#nights-count').text($(this).val());
   });
 });
