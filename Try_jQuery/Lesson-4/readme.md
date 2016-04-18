@@ -28,3 +28,10 @@ Inside our new mouseenter event handler, call the slideToggle() method on the sp
 ##4.10 Mouseleave
 _250 PTS_
 When the mouse leaves the li element, we'll want to hide the description of the photo as well. Write another event handler that targets the same elements, but calls slideToggle() only on the mouseleave event.
+
+##4.11 Named Functions
+_250 PTS_
+It looks like both of our event handlers on the .photos li elements are exactly the same! Let's go ahead and refactor these into a new function named showPhotos() and change our event handlers to reference that instead.
+
+##4.12 Keyboard Events
+**Video**
