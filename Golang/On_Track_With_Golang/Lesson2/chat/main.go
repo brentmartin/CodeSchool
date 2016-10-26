@@ -3,6 +3,7 @@ package main
 import (
 	"chat/util"
 	"os"
+	"time"
 )
 
 func main() {
@@ -15,4 +16,8 @@ func main() {
 		listenIP := util.GetLocalNetworkIP()
 		util.RunHost(listenIP + ":" + listenPort)
 	}
+}
+
+func getListenPort() string {
+	hourOfDay := time.Now().Hour()
 }
