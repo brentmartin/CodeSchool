@@ -18,6 +18,15 @@ func main() {
 	}
 }
 
+func readArgs() ([]string, error) {
+	args := os.Args
+	if len(args) > 1 && len(args[1]) > 15 {
+		err := errors.New("Too many arguments")
+		return args, err
+	}
+	return args, nil
+}
+
 func getListenPort() string {
 	hourOfDay := time.Now().Hour()
 	if hourOfDay < 12 {
