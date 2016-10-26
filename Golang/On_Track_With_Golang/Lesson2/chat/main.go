@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	listenPort := "8080"
+	listenPort := getListenPort()
 	args := os.Args
 	if len(args) > 1 {
 		hostIP := args[1]
@@ -20,4 +20,11 @@ func main() {
 
 func getListenPort() string {
 	hourOfDay := time.Now().Hour()
+	if hourOfDay < 12 {
+		return "8080"
+	} else if hourOfDay < 20 {
+		return "8081"
+	} else {
+		return "8082"
+	}
 }
