@@ -1,14 +1,23 @@
 package main
 
 import (
+	"chat/util"
 	"fmt"
 )
 
 func main() {
-	list := getBlockedIPs()
-	for i := range list {
-		fmt.Println(list[i])
+	hostIP := util.GetHostIP()
+	fmt.Println(isIPBlocked(hostIP))
+}
+
+func isIPBlocked(ip string) bool {
+	blockedIPs := getBlockedIPs()
+	for _, blockedIP := range blockedIPs {
+		if blockedIP == ip {
+			return true
+		}
 	}
+	return false
 }
 
 func getBlockedIPs() []string {
