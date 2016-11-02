@@ -8,6 +8,7 @@ import (
 type guestConnection struct {
 	ip       string
 	userName string
+	isAdmin  bool
 }
 
 func (g guestConnection) isAllowed() bool {
@@ -16,11 +17,18 @@ func (g guestConnection) isAllowed() bool {
 
 func main() {
 	ip := util.GetGuestIP()
-	userName := "Kerry"
+	userName := "Obi-Wan"
 
-	gConn := guestConnection{ip: ip, userName: userName}
-	isAllowedStatus := gConn.isAllowed()
-	fmt.Println(isAllowedStatus)
+	gConn := &guestConnection{ip: ip, userName: userName}
+	fmt.Println("Before auth", gConn)
+	authorizeAdmin(gConn)
+	fmt.Println("After auth", gConn)
+}
+
+func authorizeAdmin(c *guestConnection) {
+	if c.isAllowed() && c.ip == "192.168.0.10" {
+		c.isAdmin = true
+	}
 }
 
 func isIPBlocked(ip string) bool {
