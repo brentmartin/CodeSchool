@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 type guestConnection struct {
 	ip       string
@@ -8,8 +11,18 @@ type guestConnection struct {
 	isAdmin  bool
 }
 
+type visitorConnection struct {
+	ip       string
+	connHour int
+}
+// one implementation for guestConnection
 func (g guestConnection) notify() {
 	fmt.Println("Guest connection from user name:", g.userName)
+}
+
+// and a different implementation for visitorConnection
+func (v visitorConnection) notify() {
+	fmt.Println("Visitor connected at:", v.connHour)
 }
 
 func main() {
@@ -19,9 +32,9 @@ func main() {
 	}
 }
 
-func getAllConnections() []*guestConnection {
-	gConn1 := &guestConnection{ip: "192.168.0.10", userName: "Darth Vader"}
-	gConn2 := &guestConnection{ip: "192.168.0.11", userName: "Obi-Wan"}
+func getAllConnections() []notifier {
+	gConn := &guestConnection{ip: "192.168.0.10", userName: "Darth Vader"}
+	vConn := &visitorConnection{ip: "192.168.0.11", connHour: time.Now().Hour()}
 
 	return []*guestConnection{gConn1, gConn2}
 }
