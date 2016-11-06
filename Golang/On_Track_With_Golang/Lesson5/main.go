@@ -15,6 +15,11 @@ type visitorConnection struct {
 	ip       string
 	connHour int
 }
+
+type notifier interface {
+	notify()
+}
+
 // one implementation for guestConnection
 func (g guestConnection) notify() {
 	fmt.Println("Guest connection from user name:", g.userName)
@@ -26,15 +31,16 @@ func (v visitorConnection) notify() {
 }
 
 func main() {
-	guestConns := getAllConnections()
-	for _, c := range guestConns {
+	notifiers := getAllConnections()
+	for _, c := range notifiers {
 		c.notify()
 	}
+
 }
 
 func getAllConnections() []notifier {
 	gConn := &guestConnection{ip: "192.168.0.10", userName: "Darth Vader"}
 	vConn := &visitorConnection{ip: "192.168.0.11", connHour: time.Now().Hour()}
 
-	return []*guestConnection{gConn1, gConn2}
+	return []notifier{gConn, vConn}
 }
