@@ -1,4 +1,4 @@
-package main
+package lib
 
 import (
 	"fmt"
@@ -17,28 +17,18 @@ type visitorConnection struct {
 }
 
 type notifier interface {
-	notify()
+	Notify()
 }
 
-// one implementation for guestConnection
-func (g guestConnection) notify() {
+func (g guestConnection) Notify() {
 	fmt.Println("Guest connection from user name:", g.userName)
 }
 
-// and a different implementation for visitorConnection
-func (v visitorConnection) notify() {
+func (v visitorConnection) Notify() {
 	fmt.Println("Visitor connected at:", v.connHour)
 }
 
-func main() {
-	notifiers := getAllConnections()
-	for _, c := range notifiers {
-		c.notify()
-	}
-
-}
-
-func getAllConnections() []notifier {
+func GetAllConnections() []notifier {
 	gConn := &guestConnection{ip: "192.168.0.10", userName: "Darth Vader"}
 	vConn := &visitorConnection{ip: "192.168.0.11", connHour: time.Now().Hour()}
 
