@@ -1,7 +1,7 @@
 package lib
 
 import (
-	"fmt"
+	"sync"
 	"time"
 )
 
@@ -17,15 +17,13 @@ type visitorConnection struct {
 }
 
 type notifier interface {
-	Notify()
+	Notify(*sync.WaitGroup)
 }
 
-func (g guestConnection) Notify() {
-	fmt.Println("Guest connection from user name:", g.userName)
+func (g guestConnection) Notify(wg *sync.WaitGroup) {
 }
 
-func (v visitorConnection) Notify() {
-	fmt.Println("Visitor connected at:", v.connHour)
+func (v visitorConnection) Notify(wg *sync.WaitGroup) {
 }
 
 func GetAllConnections() []notifier {
