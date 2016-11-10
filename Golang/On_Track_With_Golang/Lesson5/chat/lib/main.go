@@ -1,6 +1,7 @@
 package lib
 
 import (
+	"chat/httpService"
 	"sync"
 	"time"
 )
@@ -21,9 +22,13 @@ type notifier interface {
 }
 
 func (g guestConnection) Notify(wg *sync.WaitGroup) {
+	httpService.SendNotification()
+	wg.Done()
 }
 
 func (v visitorConnection) Notify(wg *sync.WaitGroup) {
+	httpService.SendNotification()
+	wg.Done()
 }
 
 func GetAllConnections() []notifier {
