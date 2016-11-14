@@ -1,8 +1,10 @@
-search ||= ""
+search = "Contra"
 games = ["Super Mario Bros.", "Contra", "Metroid", "Mega Man 2"]
-matched_games = games.grep(Regexp.new(search))
+search_index = games.find_index(search)
 
-puts "Found the following games..."
-matched_games.each do |game|
-  puts "- #{game}"
+search_result = if search_index
+  "Game #{search} found: #{games[search_index]} at index #{search_index}."
+else
+  "Game #{search} not found."
 end
+puts search_result
