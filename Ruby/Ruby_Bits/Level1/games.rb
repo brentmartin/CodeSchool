@@ -1,10 +1,11 @@
-search = "Contra"
-games = ["Super Mario Bros.", "Contra", "Metroid", "Mega Man 2"]
-search_index = games.find_index(search)
-
-search_result = if search_index
-  "Game #{search} found: #{games[search_index]} at index #{search_index}."
-else
-  "Game #{search} not found."
+def search(games, search_term)
+  search_index = games.find_index(search_term)
+  if search_index
+    "Game #{search_term} found: #{games[search_index]} at index #{search_index}."
+  else
+    "Game #{search_term} not found."
+  end
 end
-puts search_result
+
+games = ["Super Mario Bros.", "Contra", "Metroid", "Mega Man 2"]
+puts search(games, "Contra")
