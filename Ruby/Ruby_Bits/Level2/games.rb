@@ -1,6 +1,6 @@
 class InvalidGameError < StandardError; end
 def new_game(name, options={})
-  raise InvalidGameError
+  raise InvalidGameError, "You must provide a name for this game." unless name
   {
     name: name,
     year: options[:year],
