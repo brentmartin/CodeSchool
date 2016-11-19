@@ -1,5 +1,6 @@
 class InvalidGameError < StandardError; end
 def new_game(name, options={})
+  raise InvalidGameError
   {
     name: name,
     year: options[:year],
