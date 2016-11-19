@@ -1,3 +1,4 @@
+class InvalidGameError < StandardError; end
 def new_game(name, options={})
   {
     name: name,
@@ -5,5 +6,8 @@ def new_game(name, options={})
     system: options[:system]
   }
 end
-
-game = new_game("Street Figher II", system: "SNES", year: 1992)
+begin
+  game = new_game(nil)
+rescue InvalidGameError => e
+  puts "There was a problem creating your new game: #{e.message}"
+end
