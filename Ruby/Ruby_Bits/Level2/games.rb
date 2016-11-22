@@ -1,6 +1,4 @@
-def describe_favorites(*games)
-  for game in games
-    puts "Favorite Game: #{game}"
+class Game
+  def initialize(name, options={})
   end
 end
-describe_favorites('Mario', 'Contra', 'Metroid')
