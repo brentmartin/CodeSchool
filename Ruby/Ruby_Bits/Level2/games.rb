@@ -6,5 +6,6 @@ class Game
     @name = name
     @year = options[:year]
     @system = options[:system]
+    @created_at = Time.now
   end
 end
