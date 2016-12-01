@@ -4,5 +4,4 @@ class Library
   def initialize(games)
     self.games = games
   end
-  end
 end
