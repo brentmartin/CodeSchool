@@ -2,6 +2,7 @@ class Library
   attr_accessor :games
 
   def initialize(games)
-    @games = games
+    self.games = games
+  end
   end
 end
