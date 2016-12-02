@@ -11,4 +11,8 @@ class Library
     end
     false
   end
+
+  def add_game(game)
+    @games << game
+  end
 end
